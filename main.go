@@ -1,3 +1,11 @@
+/*
+		Features to implement:
+[] read url and port from system arguments
+[] scan with go routines
+[]
+
+*/
+
 package main
 
 import (
@@ -19,6 +27,5 @@ func tcpPortChecker(serv string, p int) {
 		return
 	}
 	defer connex.Close()
-	o := fmt.Sprintf("%v, is Open", p)
-	fmt.Println(o)
+	fmt.Printf(`%v, is Open`, p)
 }
