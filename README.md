@@ -2,7 +2,7 @@ Laz0rMullets
 PortScanner Extreme                                                                                                                                                                                                    
 v1.0
 
-Scan for open ports, but only if you have permission to do so. 
+Scan for open ports, but only if you have permission to do so.   
 DON'T BREAK THE LAW.
 
 flags  
@@ -24,3 +24,5 @@ Example:
 portscan -url localhost -start 102 -end 904
 ```
 
+upcoming features:  
+abillity to limit ports being scanned.  
