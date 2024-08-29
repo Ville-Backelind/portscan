@@ -25,4 +25,4 @@ portscan -url localhost -start 102 -end 904
 ```
 
 upcoming features:  
-abillity to limit ports being scanned.  
+abillity to limit the rate of ports being scanned.  
