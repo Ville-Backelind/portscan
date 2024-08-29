@@ -5,7 +5,7 @@ v1.0
 Scan for open ports, but only if you have permission to do so. 
 DON'T BREAK THE LAW.
 
-flags
+flags  
  -h  
       Help  
   
