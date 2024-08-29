@@ -1,7 +1,5 @@
 /*
 		Features to implement:
-[] read url and port from system arguments
-[] scan with go routines
 []
 
 */
@@ -17,11 +15,11 @@ import (
 
 func main() {
 
-	urlFlag := flag.String("url", "scanme.nmap.org", "Give an URL or IP to be scanned")
+	urlFlag := flag.String("url", "", "Give an URL or IP to be scanned")
 	portStartFlag := flag.Int("start", 1, "Starting port number")
 	portEndFlag := flag.Int("end", 65535, "Ending port number")
 	flag.Parse()
-
+	printWelcome()
 	var wg sync.WaitGroup
 
 	for p := *portStartFlag; p <= *portEndFlag; p++ {
@@ -38,10 +36,9 @@ func main() {
 func tcpPortChecker(serv string, p int) {
 	servNport := fmt.Sprintf(serv+":%v", p)
 	connex, err := net.Dial("tcp", servNport)
-
 	if err != nil {
 		return
 	}
 	defer connex.Close()
-	fmt.Printf("%v, is Open\n", p)
+	fmt.Printf("\033[36m%v"+"\033[32m, is Open\n\033[97m", p)
 }
