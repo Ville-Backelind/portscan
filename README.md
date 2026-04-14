@@ -1,5 +1,4 @@
-Laz0rMullets
-PortScanner Extreme                                                                                                                                                                                                    
+Laz0rMullets PortScanner Extreme                                                                                                                                                                                                    
 v1.0
 
 Scan for open ports, but only if you have permission to do so.   
@@ -24,5 +23,4 @@ Example:
 portscan -url localhost -start 102 -end 904
 ```
 
-upcoming features:  
-abillity to limit the rate of ports being scanned.  
+For actual portscanning just use Nmap.
