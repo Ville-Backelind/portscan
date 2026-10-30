@@ -24,3 +24,6 @@ portscan -url localhost -start 102 -end 904
 ```
 
 For actual portscanning just use Nmap.
+
+## License
+MIT
